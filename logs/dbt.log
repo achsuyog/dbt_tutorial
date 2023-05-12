@@ -1,0 +1,61 @@
+[0m16:38:00.088890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE11CE2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE3170820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE3170850>]}
+
+
+============================== 16:38:00.096555 | 05652e96-1fa6-49e5-b6d2-81924f1f6c8f ==============================
+[0m16:38:00.096555 [info ] [MainThread]: Running with dbt=1.5.0
+[0m16:38:00.097132 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\suyog.acharya\\Documents\\data_vault\\code\\dbt_tutorial\\.dbt\\profiles.yml', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:00.098151 [error] [MainThread]: Encountered an error:
+1
+[0m16:38:00.099152 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 285, in run
+    sys.exit(1)
+SystemExit: 1
+
+[0m16:38:00.100153 [debug] [MainThread]: Command `dbt init` failed at 16:38:00.100153 after 0.01 seconds
+[0m16:38:00.101494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE11CE2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE31707C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DFE31706D0>]}
+[0m16:38:00.101993 [debug] [MainThread]: Flushing usage events
+[0m16:38:32.079605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB850826A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB87031580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB870315B0>]}
+
+
+============================== 16:38:32.086730 | 9c495860-880a-4a82-a753-42dede48173e ==============================
+[0m16:38:32.086730 [info ] [MainThread]: Running with dbt=1.5.0
+[0m16:38:32.087728 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\suyog.acharya\\Documents\\data_vault\\code\\dbt_tutorial\\.dbt\\profiles.yml', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:32.089774 [debug] [MainThread]: Starter project path: c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\include\starter_project
+[0m16:39:57.074783 [error] [MainThread]: Encountered an error:
+[Errno 2] No such file or directory: 'C:\\Users\\suyog.acharya\\Documents\\data_vault\\code\\dbt_tutorial\\.dbt\\profiles.yml\\profiles.yml'
+[0m16:39:57.078783 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\cli\main.py", line 459, in init
+    results = task.run()
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 305, in run
+    self.create_profile_from_target(adapter, profile_name=project_name)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 167, in create_profile_from_profile_template
+    self.write_profile(profile, profile_name)
+  File "c:\users\suyog.acharya\appdata\local\programs\python\python38\lib\site-packages\dbt\task\init.py", line 157, in write_profile
+    with open(profiles_filepath, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\suyog.acharya\\Documents\\data_vault\\code\\dbt_tutorial\\.dbt\\profiles.yml\\profiles.yml'
+
+[0m16:39:57.081783 [debug] [MainThread]: Command `dbt init` failed at 16:39:57.081783 after 85.00 seconds
+[0m16:39:57.082782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB850826A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB8705B580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB8705B820>]}
+[0m16:39:57.082782 [debug] [MainThread]: Flushing usage events
+[0m16:40:10.491091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1729F55B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1749A6370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1749A66D0>]}
+
+
+============================== 16:40:10.496130 | 1f5e2858-4615-4ad3-a68e-4d8019fed833 ==============================
+[0m16:40:10.496130 [info ] [MainThread]: Running with dbt=1.5.0
+[0m16:40:10.498111 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\suyog.acharya\\Documents\\data_vault\\code\\dbt_tutorial\\.dbt\\', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:10.500147 [info ] [MainThread]: A project called sales already exists here.
+[0m16:40:10.501209 [debug] [MainThread]: Command `dbt init` succeeded at 16:40:10.501209 after 0.15 seconds
+[0m16:40:10.502235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1729F55B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1749F68B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1749F6C10>]}
+[0m16:40:10.502235 [debug] [MainThread]: Flushing usage events
